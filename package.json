@@ -1,8 +1,14 @@
 {
   "name": "@shay/skeleton-react",
-  "license": "UNLICENSED",
-  "version": "0.0.1",
+  "license": "ISC",
+  "author": "Shayan Mirzaie <shayan.mirzaie1998@gmail.com>",
+  "version": "1.0.0",
   "type": "module",
+  "homepage": "https://github.com/shayan1998/skeleton-react",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shayan1998/skeleton-react"
+  },
   "files": [
     "dist"
   ],
@@ -12,10 +18,6 @@
     ".": {
       "import": "./dist/my-lib.js",
       "require": "./dist/my-lib.umd.cjs"
-    },
-    "./style": {
-      "import": "./dist/style.css",
-      "require": "./dist/style.css"
     }
   },
   "scripts": {
@@ -39,5 +41,11 @@
     "vite": "^3.2.3",
     "vite-plugin-css-injected-by-js": "^2.1.1",
     "vite-plugin-dts": "^1.7.1"
-  }
+  },
+  "keywords": [
+    "react",
+    "skeleton",
+    "js",
+    "loading"
+  ]
 }
