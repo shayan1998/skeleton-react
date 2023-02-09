@@ -4,12 +4,12 @@ import { Base } from "../styles/index";
 type props = {
   height?: string;
   width?: string;
-  onClick?: (event: React.MouseEvent<HTMLDivElement, MouseEvent>) => void;
   margin?: string;
   full?: boolean;
+  onClick?: (event: React.MouseEvent<HTMLDivElement, MouseEvent>) => void;
 };
 
-const _rect = styled(Base)`
+const _rect = styled(Base)<props>`
   ${(props: props) => props.width && { width: props.width }};
   ${(props: props) => props.full && { flex: 1 }}
   height: ${(props: props) => props.height || "1.5rem"};
