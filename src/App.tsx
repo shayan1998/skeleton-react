@@ -4,30 +4,28 @@ function App() {
   return (
     <div className="app">
       <Skeleton>
-        <Skeleton.List count={5}>
-          <Skeleton.Row>
-            <Skeleton.Circle />
-            <Skeleton.Col>
-              <Skeleton.Rect />
-              <Skeleton.Rect width="50%" />
-            </Skeleton.Col>
-          </Skeleton.Row>
-        </Skeleton.List>
-        end
-        <Skeleton.Row>
-          <Skeleton.Circle />
-          <Skeleton.Rect full />
+        <Skeleton.Row alignItems="center" justifyContent="space-between">
+          <Skeleton.Circle radius="40px" />
+          <Skeleton.Rect width="70px" height="20px" />
         </Skeleton.Row>
-        <Skeleton.Col alignItems="center">
-          <Skeleton.Circle radius="70px" />
-          <Skeleton.Rect width="50%" />
-          <Skeleton.Rect width="50%" />
-          <Skeleton.Row>
-            <Skeleton.Square />
-            <Skeleton.Square />
-            <Skeleton.Square />
-          </Skeleton.Row>
-        </Skeleton.Col>
+        <Skeleton.Rect height="220px" />
+      </Skeleton>
+      <Skeleton>
+        <Skeleton.Row alignItems="center" justifyContent="space-between">
+          <Skeleton.Square width="100px" />
+          <Skeleton.Col>
+            <Skeleton.Rect />
+            <Skeleton.Rect height="10px" />
+            <Skeleton.Rect height="10px" />
+            <Skeleton.Rect height="10px" />
+          </Skeleton.Col>
+        </Skeleton.Row>
+        <Skeleton.Rect height="10px" />
+        <Skeleton.Rect height="10px" />
+        <Skeleton.Row justifyContent="center">
+          <Skeleton.Rect width="100px" height="40px" margin="15px 10px" />
+          <Skeleton.Rect width="100px" height="40px" margin="15px 10px" />
+        </Skeleton.Row>
       </Skeleton>
     </div>
   );

@@ -16,8 +16,6 @@ easy to use library for skeleton loading.
     </tr>
 </table>
 
-
-
 <Br/>
 <Br/>
 
@@ -55,32 +53,13 @@ then use `<Skeleton>` component to see the result :
 
 ## Api
 
-| name | description | props | children | 
-|--------|--------------------------------------------|------------------|----------|
-| Skeleton | wrapper component of library | enable `boolean` <br/> dir `rtl\|ltr` | YES |
-| Skeleton.Rect | show rectangle shape | height `string ex: 20px` <br/> width `string ex: 20px` <br/> margin `string ex: 20px` <br/> full `boolean` <br/> onClick `callback function` |
-| Skeleton.Square | show square shape | width `string ex: 20px` <br/> margin `string ex: 20px` <br/> onClick `callback function` |
-| Skeleton.Cirlce | show cirlce shape | radius `string ex: 20px` <br/> margin `string ex: 20px` <br/> onClick `callback function` |
-| Skeleton.Row | show children item in a row | alignItems `center\|start\|end\|baseline` <br/> justifyContent `center\|start\|end\|space-around\|space-between` <br/> onClick `callback function` | YES |
-| Skeleton.Col | show children item in a column | alignItems `center\|start\|end\|baseline` <br/> justifyContent `center\|start\|end\|space-around\|space-between` <br/> onClick `callback function` | YES |
-| Skeleton.Center | show children item center | onClick `callback function` | YES |
-| Skeleton.List | iterate children item to show a list | count `number` | YES |
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+| name            | description                          | props                                                                                                                                              | children |
+| --------------- | ------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------- | -------- |
+| Skeleton        | wrapper component of library         | enable `boolean` <br/> dir `rtl\|ltr`                                                                                                              | YES      |
+| Skeleton.Rect   | show rectangle shape                 | height `string ex: 20px` <br/> width `string ex: 20px` <br/> margin `string ex: 20px` <br/> full `boolean` <br/> onClick `callback function`       |
+| Skeleton.Square | show square shape                    | width `string ex: 20px` <br/> margin `string ex: 20px` <br/> onClick `callback function`                                                           |
+| Skeleton.Circle | show circle shape                    | radius `string ex: 20px` <br/> margin `string ex: 20px` <br/> onClick `callback function`                                                          |
+| Skeleton.Row    | show children item in a row          | alignItems `center\|start\|end\|baseline` <br/> justifyContent `center\|start\|end\|space-around\|space-between` <br/> onClick `callback function` | YES      |
+| Skeleton.Col    | show children item in a column       | alignItems `center\|start\|end\|baseline` <br/> justifyContent `center\|start\|end\|space-around\|space-between` <br/> onClick `callback function` | YES      |
+| Skeleton.Center | show children item center            | onClick `callback function`                                                                                                                        | YES      |
+| Skeleton.List   | iterate children item to show a list | count `number`                                                                                                                                     | YES      |
