@@ -45,9 +45,9 @@ then use `<Skeleton>` component to see the result :
 
 ```
 <Skeleton>
-    <Skeleton.Circle></Skeleton.Circle>
-    <Skeleton.Rect></Skeleton.Rect>
-    <Skeleton.Rect width="75%"></Skeleton.Rect>
+    <Skeleton.Circle />
+    <Skeleton.Rect />
+    <Skeleton.Rect width="75%" />
 </Skeleton>
 ```
 
@@ -63,3 +63,38 @@ then use `<Skeleton>` component to see the result :
 | Skeleton.Col    | show children item in a column       | alignItems `center\|start\|end\|baseline` <br/> justifyContent `center\|start\|end\|space-around\|space-between` <br/> onClick `callback function` | YES      |
 | Skeleton.Center | show children item center            | onClick `callback function`                                                                                                                        | YES      |
 | Skeleton.List   | iterate children item to show a list | count `number`                                                                                                                                     | YES      |
+
+
+
+
+## Examples
+
+* post view
+ <img src="https://user-images.githubusercontent.com/43598980/218112477-91930798-ee5e-42f3-ad48-556eba3062ab.gif"/>
+ 
+```
+<Skeleton>
+    <Skeleton.Row alignItems="center" justifyContent="space-between">
+        <Skeleton.Circle radius="40px" />
+        <Skeleton.Rect width="70px" height="20px" />
+    </Skeleton.Row>
+    <Skeleton.Rect height="220px" />
+</Skeleton>
+```
+
+* list view
+<img src="https://user-images.githubusercontent.com/43598980/218112412-ad0f7791-af2c-4a51-8c2b-e06ad3856554.gif"/>
+
+```
+<Skeleton>
+    <Skeleton.List count={4}>
+        <Skeleton.Row>
+            <Skeleton.Circle />
+            <Skeleton.Col>
+                <Skeleton.Rect />
+                <Skeleton.Rect width="50%" />
+            </Skeleton.Col>
+        </Skeleton.Row>
+    </Skeleton.List>
+</Skeleton>
+```
