@@ -19,6 +19,15 @@ easy to use library for skeleton loading.
 <Br/>
 <Br/>
 
+## coming soon
+- [ ] new components
+- [ ] several animation mode
+- [ ] global colour and size registry
+- [ ] dark mode
+- [ ] vue.js implementation
+- [ ] react native implementation 
+
+
 ## installation
 
 Using npm:
